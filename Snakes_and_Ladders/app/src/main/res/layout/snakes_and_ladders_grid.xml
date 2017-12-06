@@ -5,30 +5,22 @@
     android:id="@+id/snakes_and_ladders_grid"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.shah.snakes_and_ladders.MainActivity_Snakes_and_Ladders"
-    android:background="@drawable/s_n_l__wall">
+    android:background="@drawable/s_n_l__wall"
+    tools:context="com.shah.snakes_and_ladders.MainActivity_Snakes_and_Ladders">
 
-    <!--<ImageView
+    <TextView
+        android:id="@+id/player_turn_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/s_n_l__wall"
-        android:id="@+id/imageView2"
+        android:fontFamily="cursive"
+        android:text="Player 1's turn"
+        android:textColor="#ffffff"
+        android:textSize="42dp"
+        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:scaleType="fitXY" />-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Player 1's turn"
-        android:textColor="#D50000"
-        android:textSize="42dp"
-        android:fontFamily="cursive"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/gridlayout"/>
 
     <GridLayout
         android:id="@+id/gridlayout"
@@ -546,16 +538,84 @@
 
     </GridLayout>
 
-    <Button
-        android:src="@drawable/dice2"
-        android:background="@drawable/dice2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/dice"
-        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/gridlayout"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="8dp" />
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/player1_onRoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:padding="4dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/player1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 1"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:padding="4dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/player1_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/player1_1"
+            app:layout_constraintRight_toLeftOf="@+id/dice"
+            app:layout_constraintTop_toBottomOf="@id/gridlayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/dice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dice2"
+            android:onClick="diceRoll"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/player2_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/player2_1"
+            app:layout_constraintLeft_toRightOf="@+id/dice"
+            app:layout_constraintTop_toBottomOf="@id/gridlayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/player2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 2"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:padding="4dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/player2_onRoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:padding="4dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
