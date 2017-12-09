@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/start_page"
+    android:clickable="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    android:onClick="onTappingHomePage"
     tools:context="com.shah.snakes_and_ladders.MainActivity_Snakes_and_Ladders">
+
 
     <ImageView
         android:id="@+id/image_snakes_and_ladders"
@@ -26,7 +28,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="cursive"
         android:padding="5dp"
-        android:text="Snakes 'N Ladders"
+        android:text="@string/snakes_n_ladders"
         android:textSize="42sp"
         android:textStyle="bold"
         android:textColor="#000000" />
@@ -39,9 +41,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"
         android:fontFamily="cursive"
-        android:text="Tap to Play"
+        android:text="@string/play"
         android:textSize="42sp"
         android:textColor="#000000"
         android:textStyle="bold" />
+
 
 </RelativeLayout>

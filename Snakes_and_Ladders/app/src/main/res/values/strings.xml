@@ -1,3 +1,11 @@
 <resources>
+
     <string name="app_name">Snakes_and_Ladders</string>
+    <string name="snakes_n_ladders">Snakes 'N Ladders</string>
+    <string name="play">Tap to Play</string>
+    <string name="player1_turn">Player 1's Turn</string>
+    <string name="player2_turn">Player 2's Turn</string>
+    <string name="player1_name">Player 1</string>
+    <string name="player2_name">Player 2</string>
+
 </resources>
