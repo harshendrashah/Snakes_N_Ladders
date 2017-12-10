@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/s_n_l__wall"
-    tools:context="com.shah.snakes_and_ladders.MainActivity_Snakes_and_Ladders">
+    tools:context="com.shah.snakes_and_ladders.SnakesAndLaddersBoard">
 
     <TextView
         android:id="@+id/player_turn_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
-        android:text="@string/player1_turn"
+        android:text="Player 1's Turn"
         android:gravity="center_vertical"
         android:textColor="#ffffff"
         android:textSize="42dp"
@@ -561,7 +561,7 @@
             android:id="@+id/player1_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/player1_name"
+            android:text="Player 1"
             android:gravity="center_horizontal"
             android:textColor="#ffffff"
             android:textSize="18dp"
@@ -602,7 +602,7 @@
             android:id="@+id/player2_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/player2_name"
+            android:text="Player 2"
             android:gravity="center_horizontal"
             android:textColor="#ffffff"
             android:textSize="18dp"

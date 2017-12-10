@@ -28,7 +28,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="cursive"
         android:padding="5dp"
-        android:text="@string/snakes_n_ladders"
+        android:text="Snakes 'N Ladders"
         android:textSize="42sp"
         android:textStyle="bold"
         android:textColor="#000000" />
@@ -41,7 +41,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"
         android:fontFamily="cursive"
-        android:text="@string/play"
+        android:text="Tap to Play"
         android:textSize="42sp"
         android:textColor="#000000"
         android:textStyle="bold" />
