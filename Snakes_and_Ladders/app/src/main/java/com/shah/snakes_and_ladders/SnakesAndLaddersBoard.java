@@ -182,12 +182,18 @@ public class SnakesAndLaddersBoard extends AppCompatActivity {
 
         int n = count % numberOfPlayers +1;
 
-        /*if(value == 6) {
+        if(value == 6) {
             if(n == 1)
+            {
                 startPlayer1 = true;
+                playerPosition = Play(1, value);
+            }
             else
+            {
                 startPlayer2 = true;
-        }*/
+                playerPosition = Play(2, value);
+            }
+        }
 
         /*if(startPlayer1) {
             playerPosition = Play(1, value);
@@ -195,7 +201,7 @@ public class SnakesAndLaddersBoard extends AppCompatActivity {
         else {
             playerPosition = Play(2, value);
         }*/
-        playerPosition = Play(2,value);
+       // playerPosition = Play(2,value);
         if(n==1){
             //if(startPlayer1) {
                 movePlayer1(playerPosition, posP1);
